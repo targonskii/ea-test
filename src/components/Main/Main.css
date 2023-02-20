@@ -1,0 +1,85 @@
+main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 104%;
+    color: #162c4e;
+    opacity: 0.39;
+    margin-bottom: 8px;
+}
+
+main p {
+    width: 425px;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.main button {
+    position: relative;
+    width: 240px;
+    height: 60px;
+    margin: 0 auto;
+    border-style: none;
+    border-radius: 30px;
+    padding-left: 28px;
+    background-color: #1d4169;
+    color: #fff;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: left;
+    cursor: pointer;
+}
+
+.main button::after {
+    position: absolute;
+    content: url('../../assets/arrow-right.svg');
+    top: 20px;
+    right: 20px;
+}
+
+@media only screen and (min-width: 769px) and (max-width: 900px) {
+    h1 {
+        font-size: 36px;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 361px) and (max-width: 768px) {
+    h1 {
+        font-size: 36px;
+        line-height: 104%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    main p {
+        width: 304px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        margin-bottom: 15px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    h1 {
+        font-size: 36px;
+        line-height: 104%;
+        margin-bottom: 16px;
+        text-align: center;
+    }
+
+    main p {
+        width: 304px;
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+}

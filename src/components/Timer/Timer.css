@@ -1,0 +1,128 @@
+.timer {
+    max-width: 588px;
+    margin: 20px auto 72px;
+}
+
+.timer__numbers {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 21px;
+}
+
+.timer__numbers-digit {
+    text-align: left;
+    padding-left: 23px;
+}
+
+.timer__numbers p {
+    font-weight: 600;
+    font-size: 72px;
+    line-height: 100%;
+    color: #162c4e;
+}
+
+.timer__numbers p:nth-child(2n) {
+    width: fit-content;
+}
+
+.timer__description {
+    display: flex;
+}
+
+.timer__description p {
+    position: relative;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: #fff;
+}
+
+.timer__description p:after {
+    position: absolute;
+    z-index: -1;
+    content: url('../../assets/wave.svg');
+    top: -18px;
+    left: 0px;
+}
+
+.timer__description--mobile {
+    display: none;
+}
+
+@media only screen and (min-width: 361px) and (max-width: 768px) {
+    .timer {
+        max-width: 358px;
+        margin: 35px auto 40px;
+    }
+
+    .timer__numbers {
+        margin-bottom: 20px;
+    }
+
+    .timer__numbers p {
+        font-size: 36px;
+    }
+
+    .timer__description {
+        display: none;
+    }
+
+    .timer__description--mobile {
+        display: flex;
+    }
+
+    .timer__description--mobile p {
+        position: relative;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 100%;
+        color: #fff;
+    }
+
+    .timer__description--mobile p:after {
+        position: absolute;
+        z-index: -1;
+        content: url('../../assets/wave-mobile.svg');
+        top: -14px;
+        left: 11px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .timer {
+        max-width: 310px;
+        margin: 25px 25px 40px;
+    }
+
+    .timer__numbers {
+        margin-bottom: 6px;
+    }
+
+    .timer__numbers p {
+        font-size: 36px;
+    }
+
+    .timer__description {
+        display: none;
+    }
+
+    .timer__description--mobile {
+        display: flex;
+    }
+
+    .timer__description--mobile p {
+        position: relative;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 100%;
+        color: #fff;
+    }
+
+    .timer__description--mobile p:after {
+        position: absolute;
+        z-index: -1;
+        content: url('../../assets/wave-mobile.svg');
+        top: -14px;
+        left: 6px;
+    }
+}

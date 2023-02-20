@@ -1,0 +1,113 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: #162c4e;
+}
+
+.footer__form {
+    width: 440px;
+    position: relative;
+    margin: 61px 0 72px;
+}
+
+.footer__form input {
+    width: 100%;
+    height: 59px;
+    padding-left: 27px;
+    border-radius: 30px;
+    border-style: none;
+    cursor: pointer;
+}
+
+.footer__form input::placeholder {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.footer__button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 43px;
+    height: 43px;
+    border-radius: 22px;
+    border-style: none;
+    background: #df2224;
+    cursor: pointer;
+}
+
+.footer__button::after {
+    position: absolute;
+    content: url('../../assets/arrow-right.svg');
+    top: 12px;
+    right: 12px;
+}
+
+@media only screen and (min-width: 361px) and (max-width: 768px) {
+    .footer__form {
+        width: 360px;
+        margin: 59px 0 60px;
+    }
+
+    .footer__form input {
+        height: 41px;
+        padding-left: 20px;
+        border-radius: 21px;
+    }
+
+    .footer__form input::placeholder {
+        font-size: 14px;
+    }
+
+    .footer__button {
+        top: 4px;
+        right: 5px;
+        width: 33px;
+        height: 33px;
+        border-radius: 17px;
+    }
+
+    .footer__button::after {
+        position: absolute;
+        content: url('../../assets/arrow-right-mobile.svg');
+        top: 8px;
+        right: 9px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .footer__form {
+        width: 280px;
+        margin: 50px 0;
+    }
+
+    .footer__form input {
+        height: 41px;
+        padding-left: 20px;
+        border-radius: 21px;
+    }
+
+    .footer__form input::placeholder {
+        font-size: 14px;
+    }
+
+    .footer__button {
+        top: 4px;
+        right: 5px;
+        width: 33px;
+        height: 33px;
+        border-radius: 17px;
+    }
+
+    .footer__button::after {
+        position: absolute;
+        content: url('../../assets/arrow-right-mobile.svg');
+        top: 8px;
+        right: 9px;
+    }
+}
